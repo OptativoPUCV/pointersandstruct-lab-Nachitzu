@@ -25,7 +25,7 @@ int sumaN(int a[], int N) {
       tot += a[i];
     }
 
-    return N;
+    return tot;
 }
 
 /*
@@ -36,7 +36,12 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-
+  int aux=0;
+  int i;
+  for(i=(n-1);i>(n-m);i--){
+    aux+=a[i];
+  }
+  *suma=aux;
 }
 
 /*
