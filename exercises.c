@@ -23,10 +23,9 @@ int sumaN(int a[], int N) {
     int tot = 0;
     for(i = 0; i < N; i++) {
       tot += a[i];
-      printf("%d\n", a[i]);
     }
 
-    return tot+1;
+    return tot;
 }
 
 /*
