@@ -25,7 +25,7 @@ int sumaN(int a[], int N) {
       tot += a[i];
     }
 
-    return tot;
+    return N;
 }
 
 /*
