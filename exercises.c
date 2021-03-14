@@ -25,6 +25,7 @@ int sumaN(int a[], int N) {
     for(i = 0; i < N; i++) {
       tot += a[i];
       printf("%d\n", a[i]);
+      printf("hola");
     }
 
     return tot;
