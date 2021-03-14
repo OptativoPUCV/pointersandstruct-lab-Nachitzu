@@ -21,11 +21,10 @@ Esta función suma los N primeros números del arreglo a
 int sumaN(int a[], int N) {
     int i;
     int tot = 0;
-
+    printf("hola");
     for(i = 0; i < N; i++) {
       tot += a[i];
       printf("%d\n", a[i]);
-      printf("hola");
     }
 
     return tot;
