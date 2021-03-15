@@ -93,7 +93,10 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-  v->datos[i] = valor;
+  int z;
+  for(z=0; z<i ; z++){
+    v->datos[i] = valor;
+  }
 }
 
 /*
