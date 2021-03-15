@@ -123,6 +123,6 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
     c->datos[0] = a1;
     c->datos[1] = a2;
     c->datos[0] = c->datos[0] + (b1 + b2);
-
+    c->datos[1] = c->datos[1] + (b1 + b2);
 
 }
