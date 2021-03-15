@@ -96,7 +96,7 @@ void asignarValor(Vector * v, int i, int valor) {
   v->datos[i] = valor;
   printf("\n");
   printf("%d", valor);
-  printf("\n");
+  printf("aaa\n");
 }
 
 /*
