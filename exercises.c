@@ -93,8 +93,6 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-  printf("valor =9 %d ", valor);
-  printf("i = %d ", i);
   v->datos[i] = valor; 
 }
 
@@ -125,7 +123,11 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-  int sum = b1 + b2;
-    c->datos[0] = a1 + sum;
-    c->datos[1] = a2 + sum;
+  Vector *a = crearVector(2);
+  Vector *b = crearVector(2);
+  asignarValor(a, 0, a1);
+  asignarValor(a, 1, a2);
+  asignarValor(b, 0, b1);
+  asignarValor(b, 1, b2);
+  sumaV(a, b, c);
 }
